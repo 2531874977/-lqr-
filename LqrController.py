@@ -419,14 +419,15 @@ def closed_loop_prediction_realtime(cx, cy, cyaw, ck, speed_profile, goal):
 def competitionItem(itemNum, ax=[], ay=[]):
     if itemNum == 4:
         # print(ax, ay)
-        ax.append(-10.891)
+        ax.append(-1.891)
         ay.append(-51.341)
 
     else:
-        ax = [0.0, 6.0, 12.5, 10.0, 17.5, 20.0, 25.0]
-        ay = [0.0, -3.0, -5.0, 6.5, 3.0, 0.0, 0.0]
-        # ax = [10.0, 6.0]
-        # ay = [20.0, -3.0]
+        # 必须要经过的途径点
+        ax = [0.0, 6.0, 12.5, 10.0, 17.5, 20.0, 25.0, 35.0]
+        ay = [0.0, -3.0, -5.0, 6.5, 3.0, 0.0, 0.0, -1.0]
+        # ax = [0.0, 6.0]
+        # ay = [0.0, -3.0]
 
     goal = [ax[-1], ay[-1]]
 
